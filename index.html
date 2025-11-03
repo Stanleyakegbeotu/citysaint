@@ -780,8 +780,8 @@
             } else {
                 // If quantity is selected, ensure the hidden fields are updated one last time
                 updateForm2Fields(selectedQuantityId);
-                // Redirect to thank-you.html after submission
-                e.currentTarget.action = 'thank-you.html'; 
+                // Redirect to thankyou-page.html after submission
+                e.currentTarget.action = 'thankyou-page.html'; 
             }
         }
         
@@ -821,7 +821,7 @@
             // Set default quantity selection on load
             selectQuantity('qty2'); // Default to the 'Most popular option'
             
-            // Force Form 1 submission to redirect to thank-you.html (Formspree alternative)
+            // Force Form 1 submission to redirect to thankyou-page.html (Formspree alternative)
             document.getElementById('form-1-submission').addEventListener('submit', (e) => {
                 e.preventDefault();
                 const form = e.currentTarget;
@@ -846,7 +846,7 @@
                     return;
                 }
                 
-                window.location.href = 'thank-you.html'; // Redirect
+                window.location.href = 'thankyou-page.html'; // Redirect
             });
 
         };
